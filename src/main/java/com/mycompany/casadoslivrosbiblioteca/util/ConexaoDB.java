@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoDB {
-    // Caminho para o banco de dados (o Derby criará a pasta no seu projeto)
-    private static final String URL = "jdbc:derby:biblioteca_db;create=true";
+    private static final String URL = "jdbc:derby://localhost:1527/biblioteca_db;";
     private static final String USER = "app";
     private static final String PASS = "app";
 

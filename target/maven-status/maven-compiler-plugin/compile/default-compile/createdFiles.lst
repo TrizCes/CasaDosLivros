@@ -1,2 +1,4 @@
+com\mycompany\casadoslivrosbiblioteca\model\Livro.class
 com\mycompany\casadoslivrosbiblioteca\util\ConexaoDB.class
 com\mycompany\casadoslivrosbiblioteca\CasaDosLivrosBiblioteca.class
+com\mycompany\casadoslivrosbiblioteca\dao\LivroDAO.class

@@ -1,25 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.casadoslivrosbiblioteca;
 
-import com.mycompany.casadoslivrosbiblioteca.util.ConexaoDB;
-import java.sql.SQLException;
+import com.mycompany.casadoslivrosbiblioteca.dao.LivroDAO;
+import com.mycompany.casadoslivrosbiblioteca.model.Livro;
+import java.util.List;
 
-/**
- *
- * @author oglia
- */
 public class CasaDosLivrosBiblioteca {
 
     public static void main(String[] args) {
-    var conn = ConexaoDB.getConexao();
-    if (conn != null) {
-        System.out.println("Conexão estabelecida com sucesso!");
-        try { conn.close(); } catch (SQLException e) {}
-    } else {
-        System.out.println("Falha na conexão.");
+        LivroDAO dao = new LivroDAO();
+
+        System.out.println("\n--- ACERVO DA BIBLIOTECA ---");
+        List<Livro> acervo = dao.listarTodos();
+
+        for (Livro l : acervo) {
+            // Isso usa o método toString() que criamos na classe Livro
+            System.out.println(l);
+        }
     }
-}
 }
