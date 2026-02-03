@@ -1,4 +1,8 @@
-com\mycompany\casadoslivrosbiblioteca\model\Livro.class
+com\mycompany\casadoslivrosbiblioteca\dao\GeneroDAO.class
 com\mycompany\casadoslivrosbiblioteca\util\ConexaoDB.class
 com\mycompany\casadoslivrosbiblioteca\CasaDosLivrosBiblioteca.class
+com\mycompany\casadoslivrosbiblioteca\dao\UsuarioDAO.class
+com\mycompany\casadoslivrosbiblioteca\model\Livro.class
+com\mycompany\casadoslivrosbiblioteca\model\Usuario.class
 com\mycompany\casadoslivrosbiblioteca\dao\LivroDAO.class
+com\mycompany\casadoslivrosbiblioteca\model\Genero.class
